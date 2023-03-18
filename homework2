@@ -1,0 +1,83 @@
+studentList = ["x kişisi", "y kişisi", "z kişisi"]
+
+
+def addStudent(name, surname):
+
+    student = name + " " + surname
+
+    studentList.append(student)
+
+
+
+
+def removeStudent(studentList, name, surname):
+
+   
+    for x in len(studentList):
+
+        if studentList[x] == name + " " + surname:
+
+            studentList = studentList.pop(x)
+            break
+
+    return studentList
+    
+
+
+def addMoreStudent():
+
+    while True:
+    
+        student = input("Lütfen isim soy isim giriniz ya da çıkmak için 0'a basın.")
+
+        if student == "0":
+           break
+        else:
+            studentList = studentList.append(student)
+
+
+
+
+def printlist():
+    return print(studentList)
+
+
+def index(name, surname):
+
+    while x < range(len(studentList)):
+
+        if studentList[x] == name + " " + surname:
+
+            print(x)
+
+        x += 1
+
+
+def removeMoreStudents():
+
+    while True:
+
+        student = input("Lütfen silmek istediğiniz öğrencinin ismini ve soy ismini giriniz ya da çıkmak için 0'a basın.")
+    
+        if student == 0:
+
+            break
+
+        else:
+            for i in len(studentList):
+
+                student == studentList[i]
+                
+                studentList = studentList.pop(i)
+
+
+# addStudent("umut", "caglar")
+removeStudent("x", "kişisi")
+# addMoreStudent()
+# printlist()
+# index("umut", "caglar")
+# removeMoreStudents()
+
+
+
+
